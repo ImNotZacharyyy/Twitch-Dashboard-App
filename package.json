@@ -1,0 +1,27 @@
+{
+  "name": "twitch-dashboard-wrapper",
+  "version": "1.0.0",
+  "description": "A Windows app wrapper for Twitch Dashboard",
+  "main": "main.js",
+  "author": "ImNotZacharyy",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.imnotzacharyy.twitchdashboard",
+    "productName": "Twitch Dashboard",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
