@@ -21,7 +21,7 @@ Install dependencies:
 ```bash
 npm install
 ```
-Usage
+## Usage
 
 Start the app with:
 ```
@@ -29,6 +29,38 @@ npm start
 ```
 The app will open Twitch Dashboard. The Exit button will appear on the sidebar — click it to close the app.
 
+## Building an Installer
+
+To create a Windows installer for easy app installation and uninstallation, we use Electron Builder:
+
+1. Make sure you have Electron Builder installed as a dev dependency
+```bash
+npm install --save-dev electron-builder
+```
+2. (optional) change the build sec in package.json
+```bash
+"build": {
+  "appId": "com.yourname.twitchdashboard",
+  "productName": "Twitch Dashboard App",
+  "files": [
+    "**/*"
+  ],
+  "win": {
+    "target": "nsis",
+    "icon": "build/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true
+  }
+}
+```
+3. Run the build command
+```bash 
+npm run dist
+```
+The installer .exe will be generated inside the dist/ folder. Run it to install the app.
 
 ## Development
 
