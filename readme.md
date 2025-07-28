@@ -29,7 +29,6 @@ npm start
 ```
 The app will open Twitch Dashboard. The Exit button will appear on the sidebar — click it to close the app.
 
-```bash
 
 ## Development
 
