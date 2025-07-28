@@ -1,27 +1,48 @@
 {
-  "name": "twitch-dashboard-wrapper",
+  "name": "twitch-dashboard-app",
   "version": "1.0.0",
-  "description": "A Windows app wrapper for Twitch Dashboard",
+  "description": "The Twitch Creator Dashboard but in an app so you dont need a browser",
   "main": "main.js",
-  "author": "ImNotZacharyy",
-  "license": "MIT",
-  "scripts": {
-    "start": "electron .",
-    "dist": "electron-builder"
-  },
-  "devDependencies": {
-    "electron": "^30.0.0",
-    "electron-builder": "^24.13.3"
+"scripts": {
+  "start": "electron .",
+  "dist": "electron-builder"
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImNotZacharyyy/Twitch-Dashboard-App.git"
   },
   "build": {
-    "appId": "com.imnotzacharyy.twitchdashboard",
-    "productName": "Twitch Dashboard",
+    "appId": "com.imnotazacharyy.twitchdashboard",
+    "productName": "Twitch Dashboard App",
+    "files": [
+      "**/*"
+    ],
     "win": {
       "target": "nsis",
-      "icon": "icon.ico"
+      "icon": "build/icon.ico"
     },
-    "directories": {
-      "output": "dist"
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
     }
+  },
+  "keywords": [
+    "twitch",
+    "electron"
+  ],
+  "author": "ImNotZacharyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImNotZacharyyy/Twitch-Dashboard-App/issues"
+  },
+  "homepage": "https://github.com/ImNotZacharyyy/Twitch-Dashboard-App#readme",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12",
+    "electron": "^37.2.4"
   }
 }
