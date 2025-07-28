@@ -14,7 +14,7 @@ An Electron app that loads [Twitch Dashboard](https://dashboard.twitch.tv/) and 
 1. Clone this repo or download the source.
 
 ```bash
-git clone https://github.com/yourusername/twitch-dashboard-app.git
+git clone https://github.com/ImNotZacharyyy/Twitch-Dashboard-App.git
 cd twitch-dashboard-app
 ```
 Install dependencies:
