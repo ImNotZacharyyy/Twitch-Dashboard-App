@@ -21,7 +21,7 @@ Install dependencies:
 ```bash
 npm install
 ```
-Usage
+## Usage
 
 Start the app with:
 ```
